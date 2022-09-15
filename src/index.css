@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* green theme */
+  /* --color-primary: #ff7b02;
+  --color-primary-variant: #e5a55d;
+  --color-bg-1: #000e17;
+  --color-bg-2: #001e2d;
+  --color-bg-3: #012734;
+  --color-bg-4: #003347;
+  --color-light: #85a2b2;
+  --color-white: hsl(0, 0%, 90%); */
+  
+
+  /* purple theme */
+  --color-primary: #ff7b02;
+  --color-primary-variant: #e5a55d;
+  --color-bg-1: #140021;
+  --color-bg-2: #1e0032;
+  --color-bg-3: #25003e;
+  --color-bg-4: #36005a;
+  --color-light: #d0b8e0;
+  --color-white: hsl(0, 0%, 90%);
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+  --transition: all 400ms ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background-color: rgba(229, 165, 93, 0.2);
+}
+::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: var(--color-primary-variant);
+  border-radius: 0.25rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg-3) url('./images/texture.jpg');
+  color: var(--color-light);
+  line-height: 1.7;
+}
+
+h1, h2{
+	line-height: 1.1;
+	font-weight: 400;
+}
+
+h1{
+	font-size: 4rem;
+	color: var(--color-white);
+}
+
+h2{
+	font-size: 3.5rem;
+}
+
+a, .link{
+	color: var(--color-light);
+	transition: var(--transition);
+}
+
+a:hover{
+	color: var(--color-primary);
+}
+
