@@ -8,9 +8,11 @@ const DisplayProject = ({showSingle, setShowSingle}) => {
           <h1>{showSingle?.value?.title}</h1>
           <p>{showSingle?.value?.description}</p>
           <div className="display_content_bottom">
-            <a href={showSingle?.value?.demo} target='blank'>
+            {showSingle?.value?.demo &&
+              <a href={showSingle?.value?.demo} target='blank'>
             <button>See Demo</button>
             </a>
+            }
             <a href={showSingle?.value?.github} target='blank'>
             <button>See Source Code</button>
             </a>

@@ -451,6 +451,24 @@ header {
   /* border: 0.5rem solid var(--color-bg-4); */
   transition: var(--transition);
   cursor: pointer;
+  position: relative;
+}
+.exhibition_gallery article p{
+  background: purple;
+  position: absolute;
+  top: 20px;
+  /* width: 100%; */
+  opacity: 0;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  width: 39%;
+}
+.exhibition_gallery article:hover p{
+  transform: translateY(100%);
+  transition: var(--transition);
+  opacity: 1;
+  width: 100%;
 }
 .exhibition_gallery article:hover {
   box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
